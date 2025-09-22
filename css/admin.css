@@ -1,0 +1,325 @@
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #88bed1;
+    background: url(../assets/background/admin.jpg) no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#grid {
+    margin: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clogo {
+    width: 80px;
+    display: inline;
+}
+
+/* mwnu */
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.nav .logo h1 {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+.nav ul li {
+    margin-right: 50px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-family: cursive;
+    font-size: 26px;
+}
+
+.nav ul .active::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(202, 233, 200);
+    display: flex;
+    position: relative;
+}
+
+header {
+    background-color: #222222bd;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+#logo {
+    margin-left: 30.5rem;
+    margin-top: 1.8rem;
+    position: absolute;
+    width: 100px;
+}
+
+.login {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+    margin-right: 1 00px;
+    display: block;
+    font-size: 50px;
+    background-color: #c8f0e6;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+}
+.login a {
+    color: black;
+    text-decoration: none;
+}
+.signup {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 1 00px;
+    display: block;
+    font-size: 50px;
+    background-color: #c8f0e6;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+}
+.signup a {
+    color: black;
+    text-decoration: none;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 120px;
+}
+
+
+.content .content-left {
+    display: block;
+    width: 100%;
+}
+
+.content .content-left .info {
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.274);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-left .info h2 {
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+    color: whitesmoke;
+}
+
+.content .content-left .info p {
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+button {
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #88bed1;
+}
+
+.content .content-lef button:hover {
+    background-color: #88bed1;
+}
+
+.content .content-left button {
+    font-size: large;
+    padding: 10px 23px;
+    background-color: #c8f0e6;
+    color: ;
+    border-radius: ;
+    border: none;
+    transition: background-color 0.3s;
+}
+.content .content-left button a {
+    text-decoration: none;
+}
+
+.visit button {
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+
+.content .content-right {
+    display: block;
+    width: 100%;
+}
+
+.content .content-right .but {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .content-right button {
+    margin-right: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 23px;
+    width: 200px;
+    background-color: #c8f0e6;
+    border: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.content .content-right button:hover {
+    background-color: #88bed1;
+}
+
+.container-additem {
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+    margin: 1rem auto;
+    width: 50%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.57);
+    padding: 2rem;
+}
+
+.container-additem button {
+    font-size: large;
+    padding: 10px 23px;
+    background-color: #c8f0e6;
+    border: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.container-additem button:hover {
+    background-color: #88bed1;
+}
+
+.container-editabout {
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+    margin: 1rem auto; 
+    width: 50%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.57);
+    padding: 2rem;
+}
+
+.container-editabout button {
+    font-size: large;
+    padding: 10px 23px;
+    background-color: #c8f0e6;
+    border: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.container-editabout button:hover {
+    background-color: #88bed1;
+}
+
+.container-removeitem {
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+    margin: 14rem auto; 
+    width: 50%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.57);
+    padding: 2rem;
+}
+
+.container-removeitem button {
+    font-size: large;
+    padding: 10px 23px;
+    background-color: #c8f0e6;
+    border: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #222222bd;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav ul li a.active,
+.nav ul li a:hover {
+    color: #75d6b6;
+}

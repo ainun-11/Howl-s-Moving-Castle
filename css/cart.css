@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    margin-left: 30.5rem;
+    margin-top: 1.8rem;
+    position: absolute;
+    width: 100px;
+}
+
+.clogo {
+    width: 80px;
+    display: inline;
+}
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.nav .logo h1 {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+.nav ul li {
+    margin-right: 50px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-family: cursive;
+    font-size: 26px;
+}
+
+.nav ul .active::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(202, 233, 200);
+    display: flex;
+    position: relative;
+}
+
+header {
+    background-color: #222222bd;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+body {
+    margin: 0;
+    background-color: #88bed1;
+    background: url(../assets/background/cart.gif) no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.cart-item {
+    border-radius: 1rem;
+    display: flex;
+    border: 1px solid #ccc;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #ffffffe5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    max-width: 100px;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.quantity {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-top: 0.5rem;
+}
+
+.total-section {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.checkout-button {
+    background-color: #da342e;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #c9302c;
+}
+
+#empty {
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+}
+
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.total-content {
+    flex: 1;
+    color: white;
+    margin-right: 1rem; 
+}
+
+.total-content h2 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.checkout-button {
+    background-color: #ca3c37;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #69100d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #222222bd;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav ul li a.active,
+.nav ul li a:hover {
+    color: #75d6b6;
+}

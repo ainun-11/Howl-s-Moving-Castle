@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <title>HMC | Contact</title>
+    </head>
+    <body>
+        <div class="contaier">
+        <img id="logo" src="assets/logo.png" alt="" />
+        <header id="top">
+            <section class="home">
+                <div class="nav">
+                    <div class="logo">
+                        <h1>Howl's Moving Cafe</h1>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="menu2.php">Menu</a></li>
+                            <li><a href="about2.php">About us</a></li>
+                            <li><a class="active" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="contact">
+                <div class="contact-info">
+                    <h2>Contact us!</h2>
+                    <p>If you have any questions or feedback, feel free to reach out to us. We would love to hear from you!</p>
+                    <ul>
+                        <li>Email: contact@hmccafe.com</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Address: We fly</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form action="contactform.php" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="message" rows="4" required></input>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <br /><br />
+        
+    </div>
+    </body>
+    <footer>
+        <p>&copy; 2023 Howl's Moving Cafe!. All rights reserved.</p>
+    </footer>
+</html>

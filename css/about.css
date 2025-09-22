@@ -1,0 +1,171 @@
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    margin-left: 30.5rem;
+    margin-top: 1.8rem;
+    position: absolute;
+    width: 100px;
+}
+
+body {
+    color: white;
+    margin: 0;
+    background-color: #88bed1;
+    background: url(../assets/background/about.jpg) no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.about-text {
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 2rem;
+}
+
+#grid {
+    margin: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clogo {
+    width: 80px;
+    display: inline;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.nav .logo h1 {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+.nav ul li {
+    margin-right: 50px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-family: cursive;
+    font-size: 26px;
+}
+
+.nav ul .active::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(202, 233, 200);
+    display: flex;
+    position: relative;
+}
+
+header {
+    background-color: #222222bd;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #222222bd;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav ul li a.active,
+.nav ul li a:hover {
+    color: #75d6b6;
+}
