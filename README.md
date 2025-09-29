@@ -1,14 +1,13 @@
-# Howl's Moving Café ☕
+# Howl's Moving Café 
 
-PHP/MySQL Café Website
+PHP/MySQL based Cafe management website
 
 A simple café site built with **PHP (procedural)** and **MySQL**, featuring a menu, cart, basic checkout, customer accounts, order history, a contact form, and a minimal admin area.
 
-> ⚠️ **Public repo note:** If any code/text/images reference third-party IP or brands, remove/rename those references and replace images before publishing. Keep **code MIT**, but restrict **brand assets** (logos, artwork).
 
 ---
 
-## Features
+# Features
 
 - **Public pages:** Home, Menu, About, Contact
 - **Auth:** Customer signup/login (PHP sessions)
@@ -18,7 +17,7 @@ A simple café site built with **PHP (procedural)** and **MySQL**, featuring a m
 
 ---
 
-## Tech Stack
+# Tech Stack
 
 - **PHP** (procedural, `mysqli`)
 - **MySQL/MariaDB** (via XAMPP)
@@ -27,7 +26,7 @@ A simple café site built with **PHP (procedural)** and **MySQL**, featuring a m
 
 ---
 
-## Typical Structure
+# Typical Structure
 
 > Names can vary; this mirrors what’s in the codebase.
 
